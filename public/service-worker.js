@@ -1,7 +1,10 @@
 // Files to Cache
 
 const FILES_TO_CACHE = [
-    // put files here
+    '/',
+    '/index.html',
+    '/assets/css/style.css',
+    '/dist/app.bundle.js',
 ];
 
 // Needed Consts
