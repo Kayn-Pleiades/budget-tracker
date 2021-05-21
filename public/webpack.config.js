@@ -7,7 +7,10 @@ const config = {
     entry: {
         app: './index.js',
     },
-    // Output
+    output: {
+        path: __dirname + '/dist',
+        filename: '[name].bundle.js',
+    },
     // Mode
     // Module
     // Plugins
