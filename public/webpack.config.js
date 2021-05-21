@@ -26,7 +26,25 @@ const config = {
             },
         ],
     },
-    // Plugins
+    plugins: [
+        new WebpackPwaManifest({
+          fingerprints: false,
+          name: 'Kayn Budget Tracker',
+          short_name: 'BudgetTracker',
+          description: 'An application that allows you to manage your budget.',
+          background_color: '#01579b',
+          theme_color: '#ffffff',
+          'theme-color': '#ffffff',
+          start_url: '/',
+          icons: [
+            {
+              src: path.resolve('assets/images/icons/android-chrome-192x192.png'),
+              sizes: [96, 128, 192, 256, 384, 512],
+              destination: path.join('assets', 'icons'),
+            },
+          ],
+        }),
+      ],
 };
 
 // Export
