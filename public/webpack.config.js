@@ -11,7 +11,7 @@ const config = {
         path: __dirname + '/dist',
         filename: '[name].bundle.js',
     },
-    // Mode
+    mode: 'development',
     // Module
     // Plugins
 };
