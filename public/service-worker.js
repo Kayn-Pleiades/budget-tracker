@@ -8,6 +8,8 @@ const FILES_TO_CACHE = [
 ];
 
 // Needed Consts
+const PRECACHE = 'precache-v1';
+const RUNTIME = 'runtime';
 
 // Install 
 
