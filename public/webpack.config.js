@@ -12,7 +12,20 @@ const config = {
         filename: '[name].bundle.js',
     },
     mode: 'development',
-    // Module
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                    },
+                },
+            },
+        ],
+    },
     // Plugins
 };
 
